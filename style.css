@@ -1,0 +1,40 @@
+/* Importing/Linking to the Nunito Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+
+  /* "box-sizing: border-box;" includes padding and border when setting a width or height */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+a {
+  /* Removes the Underline */
+  text-decoration: none;
+}
+
+#main {
+  /* VH (Viewport Height) determines the height of an element by setting it to a percentage of the viewport (NOTE: VW is used for width) */
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  /* NOTE: The following align-items & justify-content styles will only end up applying to the "content" div (AKA The third div) */
+  align-items: center;
+  justify-content: center;
+
+  /* So the text does NOT go up against the left and right edges on smaller screen sizes */
+  padding: 0 20px;
+}
