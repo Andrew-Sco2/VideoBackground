@@ -71,7 +71,26 @@ video {
 }
 
 #content {
-    color: white;
-    text-align: center;
-    z-index: 1;
+  color: white;
+  text-align: center;
+  z-index: 1;
 }
+
+#click {
+  /* Inline-Block allows you to set top and bottom margin as well as height and width. This is NOT the case with Inline. */
+  display: inline-block;
+  border: 2px solid white;
+  padding: 10px 30px;
+  margin-top: 25px;
+  background-color: #4b5163;
+  /* Unlike other elements a tags do NOT inherit the Color property */
+  color: white;
+  font-size: 20px;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+#click:hover {
+  /* Changes the size of an element */
+  transform: scale(0.95);
+} 
